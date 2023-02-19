@@ -1,0 +1,198 @@
+
+
+
+<html> </html>  ==>  Tüm HTML kodları bu iki tag arasındadır 
+
+<head> </head>  ==>  Html tagları içinde yazılan bir tagdır [Bağlama , Entegtre etme,  Bilgilendirme  işlemleri için kullanılır ]
+
+<meta >         ==> Bu tag head içinde bulunur mantık olarak projemde şu özellik olsun anlamını taşıyan bir bölümdür
+                    mesela  "<meta charset="UTF-8">" satırı projemde türkçe karakter olsun demektir. Normal Bir Dildeki Kütüphane
+                    ekleme yeri gibidir 
+
+<title></title> ==> Bu tag arasına yazılan  yazı sekme üzerine çıkan başlığı oluşturur       
+
+<body></body>   ==> Web sayfası içerisinde görünmesi istenen her türlü içerik buraya yazılır 
+
+<p></p>         ==> Pragraf etiketidir. Bu etiketin normal den farkı iki Pragraf etiketininin arasına pragraf boşluğu konmasıdır
+                    (SatırBaşı yapılır ) .
+
+ 
+ Lorem          ==> Bu bir kısayoldur  Lorem4 yazar enterlarsak 4 kelimelik cümle oluşturur.
+                           
+<font></font>   ==> Yazının tipini rengini büyüklüğünü belirler
+                 color parametresi=> yazının rengini belirler
+                 face parametresi=> yazının Stilini belirler
+
+<u> </u>        ==> Çevrelediği yazıyı altı çizili yazar        
+Header etiketleri (h1,h2,h3,h4,h5,h6) ==> <h1></h1> şeklindedir <h1> en büyüğüdür <h6>  en küçüğüdür
+
+<hr>            ==> Çizgi çekmek için kullanılır
+                width parametresi = çizgiye genişlik vermek için kulllanılır 
+                color parametresi = çizgiye renk vermek için kullanılır 
+
+<br>            ==> Belirtilen yerde 1 satır boşluk brakır 
+
+
+<strong></strong>  ve <b></b> ==> Belirtilen yazıyı kalın yazmak için kullanılır
+
+<i></i>           ==> Belirtilen yazıyı İtalic fontta yazmak için kullanılır 
+
+<mark></mark>     ==> Belirtilen yazının üstünü Sarı renkle çizer
+
+<img>  etiketi   ==> Resim Eklemek İçin kullanılır Parametreleri vardır 
+
+          src parametresi = resmin bilgisayar üzerindeki yolu "resimler/bayrak.jpg" formatında buraya yazılır 
+          alt parametresi = olurda resim açılmassa gönderilecek uyarı "resim bulunamadı  " formatında buraya yazılır
+          width ve heigth Parametreleri = Resmin genişliğini ve uzunluğunu belirler bu uzunluklar width ="100" formatında yazılır     
+          border parametresi= verilen resmin etrafına şekil çizmek için kullanılır 
+          title parametresi= İmlecin resim üzer geldiğinde ne yazacağı buraya yazılır
+          NOT: =>> Şeklin görüntüsünün bozulamması adına width veya heigth den biri veriilirse diğeri kendini ona göre otomatik ayarlar     
+
+          
+
+<center></center> ==> Çevrelediği yazı ve resmi ortaya  alır   center   birden fazla etiketi Çevreleyebilir ve Çevrelediği etiketi ortaya alır 
+
+<a> </a> etiketi    ==>  Link vermek sayfa içi ve Sayfalar arası Geçiş yapmak için Kullanılır 
+         
+             href parametresi= gidilmek istenen yerin url si  href= "https://www.google.com.tr/" formatında buraya yazılır .
+             name parametresi =  sayfa içinde gidilmek yer için kullanılır
+                    <a href="#fener">fenerbahçe açıklaması </a>   formatında yazarsak   "fenerbahçe açıklaması" bir yönlenme haline gelir
+
+                    ve  tıklandığında " <a name="fener"></a>" yazan yere yönelim gerçekleşir 
+
+             target parametresi= normal koşullarda href gidilmek istenen yer tıklanan sekmede açılır bunu başka bir
+             Sekmede açmak istiyorsak target="_blank " formatında yazmamız gerekir . 
+
+ol(Ordinary List) ve ul (UnOrdinary List) => Sıralı ve sırasız listelerdir
+
+
+ ul etiketi ==> sırasız listelerdir ve liste elemanları <li></li> içine yazılır li(List Item (liste elemanı))
+           type parametresi = sırasız listenin başında bulunan şekli belirler 
+                         type="square" ==> içi dolu kare
+                          type="circle" ==> içi boş çember
+                           type="disc" ==> içi dolu çember
+                            <ul type="circle">
+                              <li> eleman 1</li>
+                            </ul>
+       
+ ol etiketi ==> sıralı listelerdir ve liste elemanları <li></li> içine yazılır li(List Item (liste elemanı))
+                  
+       type parametresi = sıralı listenin hangi birime göre sıralanacağını belirler {(A,B,C,D,E...),(a,b,c,d...),(1,2,3..),(I II III )}
+       start parametresi = sıralı listenin  hangi sıradan başlayacagını belirler 
+          <ol type="1" start="10"> formatında bir ol listesi 10 11 diye sıralanır
+                            <ol>
+                              <li> eleman 2</li>
+                            </ol>
+
+<table> </table>     ==>  Tablo oluşturmak için Kullanılır 
+                      
+                    width parametresi= tablonun genişliğini width genişiliği  beliriler (width="200px") gibi
+                    height parametresi = tablonun yuksekliğini  height parametresi belirler ( height="200x") gibi
+                    border parametresi = kenarlık kalınlığı  border="10 " formatında  belirtilir
+                    cellspadding parametresi = iç boşluğu temsil eder 
+                    cellspacing parametresi = dış boşluğu temsil eder
+                    align parametresi = tablonun konumunu belirler
+                
+             
+             <table>
+                 <tr></tr>             
+             </table>
+
+  <tr></tr> ==> tr(Table Row) demektir tabloda satır oluşturmak için kullanılır tr nin içine veri <td></td> etiketi ile girilir 
+  
+  <td></td> ==> td(Table Data) <tr></tr> (satır ) içine girilen veridir 
+                width parametresi= tablonun genişliğini td ler içine girilen width genişiliği  beliriler (width="200px") gibi
+                height parametresi = tablonun yuksekliğini td ler içine girilen height parametresi belirler ( height="200x") gibi
+                background parametresi = td ler içine verilen bu parametre ile tablo satırları arkasına resim eklenebilir 
+                bgcolor parametresi = bu parametre  td arkasına resim ekler 
+
+  <th></th> ==> td ile aynı işi görür fakat yazıyı kalın yazar
+
+ NOT::>> Colspan ver Rowspan 
+
+
+
+
+
+    <td colspan="3">Hello World</td>
+
+     burda colspan belirtilen satırın büyüklüğünü temsil eder.
+       mesela diyelim  3 sütunlu  bir tabloya  başlık atmanız gerek colspan="3" yazarsan satıra başlığı 3 sütun  büyüklüğünde yapar
+
+    <td rowspan="3">Hello World</td>
+
+     
+     colspanın aynısıdır tek fark colspanda satır büyüklüğünü rowspanda sütun büyüklüğünü artırırız
+
+NOT ::>> inline ve Block yapısı 
+
+    inline yapıda olan bir element ne kadar yazıldıysa okadar yer kaplar
+    Block yapıda olan bir  elemnent ise bulunduğu satırı kaplar 
+    
+    header yapısı  block elementtir ve satırın tamamını kaplar 
+
+
+<div></div>     ==>  Div Etiketi Kutucuklar oluşturup rengini seklini belirlediğimiz yapılardır 
+ PEKİ BUNU NASIL YAPARIZ
+  
+  ===> Div kutucuğunun özelliklerini <head></head> tagı içindeki <style></style> tagı içinde tanımlarız 
+ 
+ 
+  NOOT: >>> eğer bir tanımlamanın başında "."(nokta) varsa class "# " varsa ID belirtir. 
+ 
+ 
+ DIV oluşturmak ==>
+ 
+ ===>Öncelikle <style></style> içinde class olarak div özell tanımlarız 
+ 
+  <style>
+      .divOzellik {
+         width: 200px;
+         height: 400px;
+         background-color: aqua;
+         text-align: center;
+       }
+       .divOzellik2 {
+         width: 500px;
+         height: 200px;
+          background-color: tomato;
+          text-align: center;
+ 
+          margin: 100px 20px 30px 40px;
+       }
+ 
+  </style>
+ 
+ ===> sonrada <div></div> deki class parametresiile o classı ekrana yazdırırız
+   
+ 
+   <div class=" divOzellik"> 
+   
+   </div>
+ 
+
+ <iframe></iframe>  ==> sayfamıza bir çerçeve koymak için kulanılır  
+                            width ve height Parametreleri = genişliğini ve yüksekliğini verir
+                            src parametresi = içinde gösterilercek olan html sayfasını belirler mesela <iframe src="kadir.html"></iframe>
+                            yazarsak çerçeve içinde kadir.html sayfasını görürüz
+                            frameborder parametresi = çerçeve boyutunu belirler 
+                            name parametresi = a etiketinde bulunan sayfa içi yönelimde kullanılan name dir 
+                            scrolling parametresi = ekranda bulunan kaydırma çubuğunu aktif pasi hale  getirir  (scrolling ="no") gibi
+ 
+ <form></form>  ==>
+
+
+<input></input> ==>  Form etiketi içinde Kulllanıcıdan veri almak için kulllanılır 
+                  type parametresi = alınacak verinin hangi türde olacağını belirler 
+                
+                   type="text" dersek yazı türünde veri alır 
+                   type="button" dersek bir buton oluşturur ve ve value parametresi ile button içine yazılacak yazı belirlenir 
+                    <input type="button" value=" GÖNDER">
+                   type="radio" dersek tekli seçim yaptırır
+                      NOT::> radio yazıldığı zaman  bir buton oluşur ve radiobuttonlardan  yanlızca birini seçmek istiyorsak 
+                      name parametrelerine aynı değeri girmek gerekir  
+                   type ="checkbox" dersek çoklu seçim yaptırır  
+                  size parametresi = oluşturulacak metin kutusunun boyutunu belirler 
+
+
+<select></select> ==>
